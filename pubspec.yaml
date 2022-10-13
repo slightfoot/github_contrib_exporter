@@ -1,0 +1,21 @@
+name: github_contrib_exporter
+description: GitHub Contributor Data Exporter
+version: 0.0.1
+homepage: https://github.com/slightfoot/github_contrib_exporter
+maintainer: Simon Lightfoot (@slightfoot)
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  csv: ^5.0.1
+  github: ^9.4.0
+  http: ^0.13.5
+  intl: ^0.17.0
+  week_of_year: ^2.0.0
+
+dev_dependencies:
+  lints: ^2.0.0
+
+executables:
+  github-export: main
