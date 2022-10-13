@@ -15,7 +15,7 @@ Future<void> main(List<String> arguments) async {
   print('GitHub Contributor Data Exporter - by Simon Lightfoot - 13/10/2022');
 
   // Valid input
-  if (arguments.length != 1 && !arguments[0].contains('/')) {
+  if (arguments.length != 1 || !arguments[0].contains('/')) {
     stderr.writeln('Usage: ${Platform.script.pathSegments.last} <owner/repo>');
     exitCode = -1;
     return;

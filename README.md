@@ -8,7 +8,7 @@ to CSV, so it can be further processed externally.
 ### Install
 
 ```bash
-pub global activate github_contrib_exporter
+dart pub global activate github_contrib_exporter
 ```
 
 ### Run
@@ -22,7 +22,7 @@ github-export <org/repo>
 Or:
 
 ```bash
-dart run bin/github_contrib_exporter.dart <org/repo>
+dart run bin/main.dart <org/repo>
 ```
 
 ### Support and Contributors
