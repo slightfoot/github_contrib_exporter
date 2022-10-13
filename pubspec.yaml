@@ -1,6 +1,6 @@
 name: github_contrib_exporter
 description: GitHub Contributor Data Exporter
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/slightfoot/github_contrib_exporter
 maintainer: Simon Lightfoot (@slightfoot)
 
@@ -15,7 +15,9 @@ dependencies:
   week_of_year: ^2.0.0
 
 dev_dependencies:
+  build_runner: ^2.3.0
+  build_version: ^2.1.1
   lints: ^2.0.0
 
 executables:
-  github-export: main
+  githubexport: main

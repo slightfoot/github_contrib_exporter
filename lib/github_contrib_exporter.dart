@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:csv/csv.dart';
 import 'package:github/github.dart';
+import 'package:github_contrib_exporter/version.dart';
 import 'package:http/http.dart';
 import 'package:http/retry.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -12,11 +13,11 @@ import 'package:week_of_year/week_of_year.dart';
 final csv = ListToCsvConverter();
 
 Future<void> main(List<String> arguments) async {
-  print('GitHub Contributor Data Exporter - by Simon Lightfoot - 13/10/2022');
+  print('GitHub Contributor Data Exporter v$packageVersion - by Simon Lightfoot - 13/10/2022');
 
   // Valid input
   if (arguments.length != 1 || !arguments[0].contains('/')) {
-    stderr.writeln('Usage: ${Platform.script.pathSegments.last} <owner/repo>');
+    stderr.writeln('Usage: githubexport <owner/repo>');
     exitCode = -1;
     return;
   }
