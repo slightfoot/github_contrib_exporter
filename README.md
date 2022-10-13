@@ -16,7 +16,7 @@ dart pub global activate github_contrib_exporter
 If installed as above:
 
 ```bash
-github-export <org/repo>
+githubexport <org/repo>
 ```
 
 Or:

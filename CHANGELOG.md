@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Minor README fix.
+
 ## 0.0.3
 
 - Changed executable name to githubexport no hyphen.
